@@ -1,28 +1,39 @@
-<!DOCTYPE html><html><head>
-    <title>Calculator</title><meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
     <script type="text/javascript">
-    function cube() {
-     var num = document.getElementById("n1");
-     num.value = Math.pow(num.value, 3);
-    }
-    function seno() {
-     var num = document.getElementById("n1");
-     num.value = Math.sin(num.value);
-    }
-    function cuarta() {
-     var num = document.getElementById("n1");
-     num.value = Math.pow(num.value, 4);
-    }
+        function cube() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 3);
+        }
+        function seno() {
+            var num = document.getElementById("n1");
+            num.value = Math.sin(num.value);
+        }
+        function cuarta() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 4);
+        }
+        function square() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 2);
+        }
     </script>
-    </head>
-    <body>
-     <h1>Calculadora de Rafael Martín - Górriz Trillo</h1>
-     Number:
-     <input type="text" id="n1">
-     <p>
-     <button onclick="cube()"> x^3 </button>
-     <button onclick="seno()"> seno </button>
-     <button onclick="cuarta()"> x^4 </button>
-     </p>
-    </body>
-    </html>
+</head>
+
+<body>
+    <h1>Calculadora de Rafael Martín - Górriz Trillo</h1>
+    Number:
+    <input type="text" id="n1">
+    <p>
+        <button onclick="square()"> x^2 </button>
+        <button onclick="cube()"> x^3 </button>
+        <button onclick="seno()"> seno </button>
+        <button onclick="cuarta()"> x^4 </button>
+    </p>
+</body>
+
+</html>
